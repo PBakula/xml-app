@@ -2,13 +2,16 @@
 
 Web aplikacija za upravljanje studentskim podacima s mogućnostima obrade XML-a, SOAP web uslugama, sigurnom autentikacijom i integracijom podataka o vremenu putem XML-RPC-a.
 
-![Screenshot 2025-03-18 at 23 27 19](https://github.com/user-attachments/assets/c26b76bf-4775-44dc-be98-54458a4c14ca)
+![Screenshot 2025-03-18 at 23 17 08](https://github.com/user-attachments/assets/b3413292-7d72-48c4-bebf-2f08106e6369)
 
-![Screenshot 2025-03-18 at 23 17 08](https://github.com/user-attachments/assets/037bfef5-1629-4615-8530-8619ea146a28)
+![Screenshot 2025-03-18 at 23 27 19](https://github.com/user-attachments/assets/c067c63d-7fe4-461a-8ebe-8744b53e9d99)
 
-![Screenshot 2025-03-18 at 23 18 55](https://github.com/user-attachments/assets/0c8d459e-6bbc-4485-abfe-f1997441d740)
+![Screenshot 2025-03-18 at 23 18 55](https://github.com/user-attachments/assets/8550f347-7a8b-4b48-b98e-4e1acc2ace68)
 
-![Screenshot 2025-03-18 at 23 21 25](https://github.com/user-attachments/assets/b0113c92-3aaf-48cf-b383-c26738b81778)
+![Screenshot 2025-03-18 at 23 21 25](https://github.com/user-attachments/assets/1d5cfd33-e7eb-4ee0-bc4c-1b0a81bffff1)
+
+
+
 
 ## Sadržaj
 
@@ -124,27 +127,13 @@ Web aplikacija za upravljanje studentskim podacima s mogućnostima obrade XML-a,
 
 #### Backend (.properties)
 
-Kreirajte `application.properties` datoteku u `src/main/resources` direktoriju:
+Kreirajte `application-local.properties` datoteku u `src/main/resources` direktoriju:
 
 ```properties
 # Baza podataka
-spring.datasource.url=jdbc:mysql://localhost:3306/Test1
-spring.datasource.username=root
-spring.datasource.password=YourPassword
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-
-# Server postavke
-server.port=8087
-
-# JPA postavke
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-spring.jpa.generate-ddl=true
-spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
-
-# JWT postavke
-jwt.secret=YourSecretKey
-jwt.expiration=86400000
+spring.datasource.url= <database url>
+spring.datasource.username= <database username>
+spring.datasource.password= <database password>
 ```
 
 #### XML-RPC server (.properties)
